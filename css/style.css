@@ -11,16 +11,11 @@
 html,body{
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-header{
-    width: 100%;
     overflow: hidden;
-    
 }
 
-video{
+img{
+    z-index: -9;
     position: fixed;
     background-size: cover;
     top: 0;
@@ -28,8 +23,29 @@ video{
     left: 0;
     display: block;
     width: 100%;
-    z-index: -999;
+}
 
+.video-container{
+    width: 100%;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#vd{
+    position: fixed;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    z-index: -8;
     
 }
 /*------Classes------*/
@@ -37,10 +53,12 @@ video{
     font-size: 30px;
     color: #fff;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding-top: 10%;
 
 }
+
 
 
 
@@ -58,28 +76,30 @@ li,a{
 
 ul{
     justify-content: center;
-    margin-top: 4%;
+    margin-top: 8%;
 }
 
 /* ---------------classes--------------------*/
 .menu{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 10px 0 0 0;
 }
-    
+
 .sb-m{
-    align-items: center;
+    height: 50px;
     display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
     justify-content: center;
     margin: 5px;
     padding: 0;
 }
 
 .bt{
-    display: block;
     padding: 20px;
 
 }
@@ -90,6 +110,11 @@ ul{
         
 }
 
+@media(max-width: 500px){
+    .menu ul{
+        display: inline-block;
+    }
+}
 
 
 
@@ -100,6 +125,7 @@ ul{
 #title-t{
     display: flex;
     justify-content: center;
+    margin: 8px;
 }
 
 #img-tb{
@@ -111,7 +137,6 @@ ul{
 .link{
     color: #fff;
     display: flex;
-
     padding: 0;
 }
 
@@ -122,6 +147,7 @@ ul{
 }
 
 .work {
+    display: flex;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
