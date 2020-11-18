@@ -4,31 +4,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro Projeto</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <script src="js/file.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Thiago Dutra</title>
 </head>
 
 <body>
-    <!--menu-->
-    <div class="menu-cab" style="width: 100%; height: 35%; border: none;">
-
-    </div>
-    <!--video-background-->
-
-    <header class="video-container">
-        <video autoplay loop muted id="vd" poster="img/poster.jpg">
-            <source src="video/video (7).mp4" type="video/mp4">
-        </video>
-
-        <div class="content">
-            <h1>Thiago Dutra</h1>
-            <p>Front-end developer</p>
-        </div>
+    <!--menu-start-->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent navbar-dark">
+            <div class="container">
+                <a class="navbar-brand h1 mb-0" href="#home">
+                    <i class="fas fa-laptop-code fa-2x"></i>
+                </a>
+                <button class="navbar-toggler" type="buttom" data-toggle="collapse" data-target="#navbarSite">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSite">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link custom" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom" href="#about">Sobre mim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom" href="#work">Trabalhos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom" href="#contact">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <script>
+    <!--end-of-menu-->
+    <!----------------------------------------------------------------------------->
+    <!--hero-start-->
+    <section id="home" class="t-height d-flex">
+        <div class="container align-self-center capa">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Thiago Dutra</h1>
+                    <h3>Desenvolvedor Front-End Jr</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end-of-hero-->
+    <!----------------------------------------------------------------------------->
+    <!---about--->
+    <section id="about" class="bg-secondary ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 im d-none d-sm-block">
+                    <img src="./img/karl-pawlowicz-gbRaa67fEPo-unsplash (3).jpg" class="img-fluid">
+                </div>
+                <div class="col-md-6 text-center align-self-center title1">
+                    <h3>Sobre mim</h3><br>
+                    <p class="text-justify abt">
+                        Formado em analise e desenvolvimento de sistemas,
+                        pela faculdade Impacta em Dezembro de 2019.
+                        Morador de São paulo, capital.
+                        Atuando na area de T.I desde 2018, decidi me dedicar ao desenvolvimento
+                        Front-End, em 2019, desde então, venho aprimorando e aplicando meus
+                        conhecimentos tecnicos.
+                    </p><br>
+                    <h3>Conhecimentos</h3>
+                    <p class="abt">
+                        HTML5, CSS3, bootstrap4, javascript e GIT
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---about--->
+    <!----------------------------------------------------------------------------->
+    <!---work--->
+    <section id="work">
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-md-12 text-center my-4">
+                    <h3>Meus Trabalhos</h3>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-lg  rounded">
+                        <img src="./img/fotodoporti.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Monitor de doações</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-lg rounded">
+                        <img src="./img/manute.png" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-lg rounded">
+                        <img src="./img/manute.png" class="card-img-top">
+                    </div>
+                </div>
+            </div>
 
-    </script>
+        </div>
+    </section>
+    <!---work--->
+    <!----------------------------------------------------------------------------->
+    <!---contact--->
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mt-4 mb-1">
+                    <h3>Entre em contato</h3>
+                </div>
+                <div class="col-md-4 contact text-center">
+                    <i class="far fa-envelope fa-3x"></i>
+                    <p><span class="ct">thiago.silva2210@outlook.com</span></p>
+                </div>
+                <div class="col-md-4 contact text-center">
+                    <i class="fab fa-whatsapp fa-3x"></i>
+                    <p><span class="ct">(11)96649-6164</span></p>
+                </div>
+                <div class="col-md-3 contact text-center pt-3">
+                    <a href="https://github.com/thiagosilvadtr" target="blank">
+                        <i class="fab fa-github-square fa-4x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/thiago-da-silva-dutra-204483186/" target="blank">
+                        <i class="fab fa-linkedin fa-4x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!---contact--->
+
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
 </body>
 
 </html>

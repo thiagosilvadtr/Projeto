@@ -1,166 +1,163 @@
-/* -----------------------------------*/
-/* ---------->>> file index <<<-----------*/
-/* -----------------------------------*/
-/*selectors*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html,body{
+html,
+body{
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-img{
-    z-index: -9;
-    position: fixed;
-    background-size: cover;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
+nav.navbar-transparent, footer {
+    background: rgba(0, 0, 0, 0.6);
 }
 
-.video-container{
+.t-height{
+    height: 100%;
     width: 100%;
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-#vd{
-    position: fixed;
-    background-size: cover;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    z-index: -8;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,3)), url(../img/computer-1245714_1920.jpg),
+    no-repeat center center fixed;
+    background-size: 100%;
+    color: white;
     
 }
-/*------Classes------*/
-.content{
-    font-size: 30px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10%;
 
+.navbar-nav .nav-item .nav-link, .title1{
+    color: white;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    text-decoration: underline;
+    
+}
+
+
+h1,h3{
+    font-weight: 300;
+    
+}
+
+
+.contact{
+    margin: 40px auto;
+}
+
+.ct{
+    font-size: 1.25em;
+}
+
+.card{
+    transition: .5s;
+}
+
+.card-img-top, .card:hover{
+    background: rgba(0, 0, 0, .6);
+}
+
+.card-img-top{
+    width: 100%;
+    height: 100%;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.im{
+    width: 20%;
 }
 
 
 
+/*Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
+@media (max-width: 575.98px) {
+    h1{
+        font-size: 1.9em;
+    }
 
-/* -----------------------------------*/
-/* ---------->>> file header <<<-----------*/
-/* -----------------------------------*/
+    h3{
+        font-size: 1.2em;
+    }
 
-li,a{
-    color: #fff;
-    margin: 20px;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 22px;
-}
+    .contact{
+        margin: 10px auto;
+    }
 
-ul{
-    justify-content: center;
-    margin-top: 8%;
-}
+    .col-md-6 .abt{
 
-/* ---------------classes--------------------*/
-.menu{
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    list-style-type: none;
-    margin: 0;
-    padding: 10px 0 0 0;
-}
+        letter-spacing: -0.05em;
+    }
 
-.sb-m{
-    height: 50px;
-    display: flex;
-    flex-direction:row-reverse;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-    padding: 0;
-}
+    .col-md-4{
+        margin: 7px 0;
+    }
 
-.bt{
-    padding: 20px;
+    .title1{
+        margin: 15px 0;
+    }
+
+    .t-height{
+        height: 90%;
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,3)), url(../img/computer-bk-mobil.jpg),
+        no-repeat center center fixed;
+        background-size: cover;
+        color: white;
+    }
 
 }
 
-.bt:hover
-{
-        box-shadow: inset 0 0 0 8px rgb(55, 0, 255);
-        
+/* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1{
+        font-size: 2em;
+    }
+
 }
 
-@media(max-width: 500px){
-    .menu ul{
-        display: inline-block;
+/*Dispositivos médios (tablets com 768px ou mais)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1{
+        font-size: 3em;
+    }
+    .ct{
+        font-size: 1.2em;
+    }
+
+}
+
+/* Dispositivos large (desktops com 992px ou mais)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1{
+        font-size: 4em;
     }
 }
 
+/* Dispositivos extra large (desktops grandes com 1200px ou mais)*/
+@media (min-width: 1200px) {
+    h1{
+        font-size: 5em;
+    }
 
+    h3{
+        font-size: 2em;
+    }
 
-/* -----------------------------------*/
-/* ---------->>> file trabalhos <<<-----------*/
-/* -----------------------------------*/
-/* ---------------id--------------------*/
-#title-t{
-    display: flex;
-    justify-content: center;
-    margin: 8px;
+    .nav-link{
+        font-size: 1.1em;
+    }
+
+    .text-justify{
+        font-size: 3.4em;
+    }
+
+    .ct{
+        font-size: 1.4em;
+    }
+
+    .col-md-6 .abt{
+        font-size: 1.4em;
+        letter-spacing: -0.05em;
+    }
+
+    .col-md-3 .fab i{
+        width: 70px;
+    }
 }
-
-#img-tb{
-    background-image: url(../img/bkg.jpg);
-    z-index: -999;
-}
-
-/* ---------------classes--------------------*/
-.link{
-    color: #fff;
-    display: flex;
-    padding: 0;
-}
-
-.container {
-    display: flex;
-    height: 100vh;
-    
-}
-
-.work {
-    display: flex;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    flex: 1;
-    margin: 2px;
-    padding: 0;
-    transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.work:hover {
-    flex-basis: 65vw;
-}
-
-
-
-
